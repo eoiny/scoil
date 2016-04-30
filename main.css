@@ -1,0 +1,88 @@
+ /*
+   *= require bootstrap/dist/css/bootstrap.min.css
+   *= require_self
+   */
+
+
+.features .glyphicon {
+  font-size: 32px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.quote {
+  background-color: #444;
+  color: #e1e1e1;
+}
+.quote blockquote {
+  border: none;
+  margin: 0;
+}
+.quote footer {
+  color: #c1c1c1;
+}
+section, header {
+  background-color: #fff;
+}
+
+
+
+#demo-nav {
+  display: none;
+}
+
+.show-nav #demo-nav {
+  display: block;
+}
+
+
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+h2 {
+   font-family: Georgia, serif;
+   font-size: 14px;
+ }
+
+
+div.tooltip{
+  position:fixed;
+  text-align:center;
+  width:120px;
+  padding:10px;
+  font-size:10px;
+  font-family:Helvetica,sans-serif;
+  background:#ffffff;
+  pointer-events:none;
+  opacity:0;
+  border:1px solid #ccc;
+  z-index: 120;
+}
+ .axis {
+   font: 10px sans-serif;
+   fill: #666666;
+ }
+
+ .axis path,
+ .axis line {
+   fill: none;
+   stroke: #666666;
+   stroke-width: 0.75;
+   shape-rendering: crispEdges;
+
+ }
+
+ .x.axis path {
+   display: none;
+ }

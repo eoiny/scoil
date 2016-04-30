@@ -1,0 +1,95 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shape of Irish Primary Schools</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="all" rel="stylesheet" />
+  <link href="main.css" media="all" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.13/d3.min.js"></script><link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="stepper.css">
+</head>
+<body>
+<div id="container">
+  <h1>Balancing Act</h1>
+  <h4>The Education Act ( requires the Minister for Education to ensure that a “reasonable amount” of time is set aside in each school day for subjects relating to the school’s ethos.Is it possible to guarantee unbaptised children access to their local religious-run school without undermining the entire system of denominational education? The following visualisation explores the current 'shape' of primary schools.</h4>
+  <h2>by Eoin Ó Loideáin | 9 January 2016</h2>
+ <!-- <div id="vis-nav">
+    <a href="#" id="step1" class="step-link active" onclick="movePope();">Step1</a>
+    <a href="#" id="step2" class="step-link">Step2</a>
+    <a href="#" id="step3" class="step-link">Step3</a>
+  </div> -->
+  <div id="vis-container">
+    <div id="vis-nav" class="vis-nav">
+      <a href="#" id="step1" class="step-link" onclick="highlightGrid();">Step1</a>
+      <a href="#" id="step2" class="step-link" onclick="moveEthos();">Step2</a>
+    <a href="#" id="step3" class="step-link" onclick="highlightIrish();">Step3</a>
+      <a href="#" id="step4" class="step-link" onclick="highlightMix();">Step4</a>
+      <a href="#" id="step5" class="step-link" onclick="highlightSpecial();">Step5</a>
+      <a href="#" id="step6" class="step-link" onclick="barChart();">Step6</a>
+    </div>
+           <div class="intro" id="intro">
+             <h4>Let's have a look at prinary schools in Ireland</h4>
+             <p>Click the buttons above to explore.</p>
+             </div>
+
+           <div id="annotation-steps">
+             <div class="annotation-step" id="step1-annotation">
+               <div class="annotation" id="step1-right-annotation" >
+                 <h4>School ethos and denominations</h4>
+                 <p>There are <strong>3,277</strong> primary schools in Ireland.</p>
+               </div>
+             </div>
+             <div class="annotation-step" id="step2-annotation">
+               <h4>School ethos and denominations</h4>
+               <p>With <strong>2,994</strong> schools the Catholic church is the overwhelming patron of primary schools. The other schools include:
+               <ul>
+               <li><strong>175</strong> Church of Ireland</li>
+               <li><strong>111</strong> Multi-denominationa</li>
+               <li><strong>17</strong> Inter-denominationa</li>
+               <li><strong>15</strong> Presbyterian</li>
+               <li><strong>10</strong> Other/unknown</li>
+               <li><strong>2</strong> Muslim</li>
+               <li><strong>1</strong> Methodist</li>
+               <li><strong>1</strong> Jewish</li>
+               <li><strong>1</strong> Quaker</li>
+             </ul></p>
+             </div>
+             <div class="annotation-step" id="step3-annotation">
+               <h4>Irish language</h4>
+               <p>Schools are classes as being All-Irish, Part-Irish or No Irish.</p>
+             </div>
+             <div class="annotation-step" id="step4-annotation">
+               <h4>Boys and Girls</h4>
+               <p>Scools are classes as being All-Irish, Part-Irish or No Irish.</p>
+             </div>
+             <div class="annotation-step" id="step5-annotation">
+               <h4>Special schools</h4>
+               <p>There are <strong>10,0000</strong> of what are class as maintream schools, with the remaining <strong>10,0000</strong> being classes as special schools.</p>
+             </div>
+             <div class="annotation-step" id="step6-annotation">
+               <h4>Class sizes</h4>
+               <p>Class sizes range from 0-9 category to 40-45. These figures apply to mainstream schools not special schools.</p>
+             </div>
+           </div>
+           <div id="vis-canvas">
+               <div id="chart">
+                 <div id = "tooltip" class = "tooltip"></div>
+                 <div class = "info"></div>
+                 <div class = "content"></div>
+               </div>
+           </div>
+    <div id="bars">
+   </div>
+ </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+ <script src="squares.js"></script>
+ <script src="stepper.js"></script>
+ </body>
